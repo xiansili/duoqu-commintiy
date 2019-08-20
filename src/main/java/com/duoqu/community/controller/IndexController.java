@@ -1,4 +1,4 @@
-package com.duoqu.community.Controller;
+package com.duoqu.community.controller;
 
 
 import org.springframework.stereotype.Controller;
