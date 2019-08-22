@@ -12,4 +12,8 @@ public class UserService {
     public int addUser(User user){
         return userMapper.addUser(user);
     }
+
+    public User findByToken(String token) {
+        return userMapper.findByToken(token);
+    }
 }
