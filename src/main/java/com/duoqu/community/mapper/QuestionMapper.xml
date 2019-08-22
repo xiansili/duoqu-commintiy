@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.duoqu.community.mapper.QuestionMapper">
+    <!--    <select id="getUser" resultType="com.fiberhome.pojo.User">-->
+    <!--        select * from user-->
+    <!--    </select>-->
+    <!--    <delete id="deleteUser" parameterType="Integer">-->
+    <!--        delete from user where id =#{id}-->
+    <!--    </delete>-->
+    <insert id="addUser" parameterType="com.duoqu.community.model.Question">
+        insert into question(title,description,gmt_create,gmt_modified,view_count,like_count,tags,creator,comment_count)
+        values(#{title},#{description},#{view_count},#{gmtCreate},#{gmtModified}#{likeCount},
+        #{tags},#{creator},#{commentCount})
+    </insert>
+<!--    <select id="findByToken" resultType="com.duoqu.community.model.User" >-->
+<!--        select * from USER where token = #{token}-->
+<!--    </select>-->
+</mapper>
