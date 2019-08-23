@@ -8,8 +8,8 @@
 <!--        delete from user where id =#{id}-->
 <!--    </delete>-->
     <insert id="addUser" parameterType="com.duoqu.community.model.User">
-        insert into USER (account_id,name,token,gmt_create,gmt_modified)
-        values(#{accountId},#{name},#{token},#{gmtCreate},#{gmtModified})
+        insert into USER (account_id,name,token,gmt_create,gmt_modified,AVATAR_URL)
+        values(#{accountId},#{name},#{token},#{gmtCreate},#{gmtModified},#{avatarUrl})
     </insert>
     <select id="findByToken" resultType="com.duoqu.community.model.User" >
         select * from USER where token = #{token}

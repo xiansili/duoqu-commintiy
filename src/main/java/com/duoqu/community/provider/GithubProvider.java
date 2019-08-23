@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @Component
 public class GithubProvider {
-//    获取令牌
+    //    获取令牌
     public String getAccessToken(AccessTokenDto accessTokenDto){
         MediaType mediaType = MediaType.get("application/json; charset=utf-8");
         OkHttpClient client = new OkHttpClient();
