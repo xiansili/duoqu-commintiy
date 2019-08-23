@@ -8,6 +8,9 @@ public class Question {
     private Integer commentCount;
     private Integer viewCount;
     private Integer likeCount;
+    private String tags;
+    private Long gmtCreate;
+    private Long gmtModified;
 
     public Integer getId() {
         return id;
@@ -88,8 +91,4 @@ public class Question {
     public void setGmtModified(Long gmtModified) {
         this.gmtModified = gmtModified;
     }
-
-    private String tags;
-    private Long gmtCreate;
-    private Long gmtModified;
 }

@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class QuestionService {
     @Autowired
     private QuestionMapper questionMapper;
+
     public int addQuestion(Question question) {
         return questionMapper.addQuestion(question);
     }

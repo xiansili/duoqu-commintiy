@@ -1,0 +1,60 @@
+body{
+    background-image: url("../img/bg.jpg");
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+/*头部*/
+.header,.navbar{
+    width: 100%;
+    background: #499ef3;
+    border: none;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+#publish{
+    margin-top: 50px;
+}
+#publish .left-container .title span{
+    font-size: 30px;
+}
+#publish .container-fluid{
+    background-color: #fff;
+}
+
+#publish .left-container .title .question{
+    float: right;
+    margin-left: 20px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#publish .container-fluid{
+    height: 650px;
+}
+#publish .container-fluid .form-group{
+    margin-top: 35px;
+}
+
+/*发现*/
+#found .wrapper{
+    background-color: #fff;
+    padding: 10px;
+}
+
+#found .found-header{
+    font-size: 20px;
+}
